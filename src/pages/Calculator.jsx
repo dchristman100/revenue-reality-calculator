@@ -154,7 +154,9 @@ export default function Calculator() {
   const [showEmailGate, setShowEmailGate] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [phoneError, setPhoneError] = useState('');
   
   const results = useMemo(() => calculateRevenueGap(inputs), [inputs]);
   
@@ -168,10 +170,20 @@ export default function Calculator() {
   
   const handleEmailSubmit = (e) => {
     e.preventDefault();
+    let hasError = false;
+    
     if (!email || !email.includes('@')) {
       setEmailError('Please enter a valid email');
-      return;
+      hasError = true;
     }
+    
+    if (!phone || phone.length < 10) {
+      setPhoneError('Please enter a valid phone number');
+      hasError = true;
+    }
+    
+    if (hasError) return;
+    
     setShowEmailGate(false);
     setShowResults(true);
   };
@@ -521,21 +533,41 @@ export default function Calculator() {
             </p>
             
             <form onSubmit={handleEmailSubmit}>
-              <Input
-                type="email"
-                placeholder="Your business email"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  setEmailError('');
-                }}
-                className="h-12 mb-2"
-              />
-              {emailError && <p className="text-red-500 text-sm mb-2">{emailError}</p>}
+              <div className="space-y-4">
+                <div>
+                  <Input
+                    type="email"
+                    placeholder="Your business email"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                      setEmailError('');
+                    }}
+                    className="h-12"
+                    required
+                  />
+                  {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>}
+                </div>
+                
+                <div>
+                  <Input
+                    type="tel"
+                    placeholder="Your mobile phone number"
+                    value={phone}
+                    onChange={(e) => {
+                      setPhone(e.target.value);
+                      setPhoneError('');
+                    }}
+                    className="h-12"
+                    required
+                  />
+                  {phoneError && <p className="text-red-500 text-sm mt-1">{phoneError}</p>}
+                </div>
+              </div>
               
               <Button
                 type="submit"
-                className="w-full h-12 bg-[#F54A48] hover:bg-[#e04442] text-white font-semibold rounded-lg"
+                className="w-full h-12 bg-[#F54A48] hover:bg-[#e04442] text-white font-semibold rounded-lg mt-4"
               >
                 SHOW MY RESULTS
               </Button>
