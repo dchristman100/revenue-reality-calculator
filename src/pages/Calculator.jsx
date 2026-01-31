@@ -264,14 +264,6 @@ export default function Calculator() {
                     ))}
                   </div>
                   
-                  {/* Live Preview */}
-                  <div className="bg-gradient-to-r from-[#FFEBEE] to-[#E8F5E9] rounded-xl p-6 hidden lg:block">
-                    <p className="text-sm text-slate-500 mb-2">Estimated Monthly Gap</p>
-                    <p className="text-4xl font-bold text-[#F54A48]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                      ${results.total.monthly.toLocaleString()}
-                    </p>
-                    <p className="text-sm text-slate-400 mt-1">Updates as you adjust</p>
-                  </div>
                 </motion.div>
                 
                 {/* Right: Calculator */}
@@ -348,14 +340,6 @@ export default function Calculator() {
                       format="currency"
                       tooltip="As an owner, your hourly value"
                     />
-                    
-                    {/* Mobile Live Preview */}
-                    <div className="bg-gradient-to-r from-[#FFEBEE] to-[#E8F5E9] rounded-xl p-4 mb-6 lg:hidden">
-                      <p className="text-sm text-slate-500 mb-1">Estimated Monthly Gap</p>
-                      <p className="text-3xl font-bold text-[#F54A48]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                        ${results.total.monthly.toLocaleString()}
-                      </p>
-                    </div>
                     
                     <Button
                       onClick={handleCalculate}
