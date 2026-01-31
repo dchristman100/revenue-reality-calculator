@@ -143,12 +143,12 @@ export default function Calculator() {
   const mode = urlParams.get('mode') || 'combined';
   
   const [inputs, setInputs] = useState({
-    monthlyLeads: 50,
-    avgJobValue: 35000,
+    monthlyLeads: 40,
+    avgJobValue: 10000,
     closeRate: 20,
     tireKickerPercent: 40,
-    missedCalls: 15,
-    hourlyValue: 500
+    missedCalls: 20,
+    hourlyValue: 250
   });
   
   const [showEmailGate, setShowEmailGate] = useState(false);
@@ -283,9 +283,9 @@ export default function Calculator() {
                       label="What's your average job worth?"
                       value={inputs.avgJobValue}
                       onChange={(v) => updateInput('avgJobValue', v)}
-                      min={5000}
-                      max={100000}
-                      step={5000}
+                      min={2500}
+                      max={75000}
+                      step={2500}
                       format="currency"
                       tooltip="Typical completed job revenue"
                     />
