@@ -214,9 +214,9 @@ export default function Calculator() {
   const experienceUrl = `${createPageUrl('Experience')}?from=calculator&total_gap=${results.total.monthly}&garbage_cost=${results.garbage.total}&missed_cost=${results.missed.total}&mode=${mode}`;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+      <header className="sticky top-0 z-50 bg-[#0A1628] border-b-2 border-[#FF6B47]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center">
             <img 
@@ -225,7 +225,7 @@ export default function Calculator() {
               className="h-16"
             />
           </div>
-          <span className="text-sm text-[#6B7C93] font-medium hidden sm:block">Speed Wins. Every Time.</span>
+          <span className="text-xs text-[#B8BCC8] font-semibold uppercase tracking-wider hidden sm:block">Your AI sales team that never sleeps</span>
         </div>
       </header>
 
@@ -242,12 +242,12 @@ export default function Calculator() {
                   transition={{ duration: 0.6 }}
                 >
                   <h1 
-                    className="text-4xl lg:text-5xl font-extrabold text-[#0D0F33] leading-tight mb-6"
-                    style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
+                    className="text-4xl lg:text-5xl font-bold text-[#1F2937] leading-tight mb-6"
+                    style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
                   >
                     {copy.h1}
                   </h1>
-                  <p className="text-lg text-[#6B7C93] mb-8 leading-relaxed">
+                  <p className="text-lg text-[#B8BCC8] mb-8 leading-relaxed">
                     {copy.subhead}
                   </p>
                   <div className="space-y-3 mb-8">
@@ -344,9 +344,9 @@ export default function Calculator() {
                     
                     <Button
                       onClick={handleCalculate}
-                      className="w-full h-14 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+                      className="w-full h-14 text-sm font-bold uppercase bg-[#FF6B47] hover:bg-[#FF5533] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
                     >
-                      {copy.cta} →
+                      {copy.cta}
                     </Button>
                   </div>
                 </motion.div>
@@ -355,15 +355,15 @@ export default function Calculator() {
           </section>
           
           {/* Trust Bar */}
-          <section className="py-8 border-t border-slate-200 bg-white">
+          <section className="py-8 border-t border-slate-200 bg-[#F5F3EE]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
-                <span className="text-slate-500 font-medium">Trusted by 200+ contractors</span>
+                <span className="text-[#B8BCC8] font-semibold">Trusted by 200+ roofing contractors</span>
                 <div className="flex items-center gap-1">
                   {[1,2,3,4,5].map(i => (
-                    <Star key={i} className="w-5 h-5 fill-[#FA982F] text-[#FA982F]" />
+                    <Star key={i} className="w-5 h-5 fill-[#FF6B47] text-[#FF6B47]" />
                   ))}
-                  <span className="ml-2 text-slate-600 font-medium">4.9/5</span>
+                  <span className="ml-2 text-[#1F2937] font-bold">5-10x ROI</span>
                 </div>
               </div>
             </div>
@@ -565,8 +565,8 @@ export default function Calculator() {
       
       {/* Footer */}
       <footer className="py-8 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#6B7C93] text-sm">
-          © 2026 ShiFt | Privacy | Terms
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#B8BCC8] text-sm">
+          © 2026 ShiFt. All rights reserved.
         </div>
       </footer>
     </div>

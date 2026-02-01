@@ -75,9 +75,9 @@ export default function Experience() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+      <header className="sticky top-0 z-50 bg-[#0A1628] border-b-2 border-[#FF6B47]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center">
             <img 
@@ -88,10 +88,10 @@ export default function Experience() {
           </div>
           <Button
             asChild
-            className="bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg"
+            className="bg-[#FF6B47] hover:bg-[#FF5533] text-white rounded-lg font-bold uppercase text-sm"
           >
             <a href="https://calendly.com/shiftnow/reality-session" target="_blank" rel="noopener noreferrer">
-              Book Demo
+              Live Demo
             </a>
           </Button>
         </div>
@@ -130,20 +130,20 @@ export default function Experience() {
             transition={{ duration: 0.6 }}
           >
             <h1 
-              className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-[#0D0F33] leading-tight mb-6"
-              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
+              className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1F2937] leading-tight mb-6"
+              style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
             >
-              See ShiFt in Action
+              Experience ShiFt Live
             </h1>
-            <p className="text-xl text-[#6B7C93] mb-10 max-w-2xl mx-auto">
+            <p className="text-xl text-[#B8BCC8] mb-10 max-w-2xl mx-auto">
               {heroSubhead}
             </p>
             <Button
               onClick={() => setIsVideoPlaying(true)}
-              className="h-14 px-8 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              className="h-14 px-8 text-sm font-bold uppercase bg-[#FF6B47] hover:bg-[#FF5533] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
             >
               <Play className="mr-2 w-5 h-5" />
-              WATCH DEMO
+              LIVE DEMO
             </Button>
           </motion.div>
         </div>
@@ -190,12 +190,12 @@ export default function Experience() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 
-              className="text-3xl lg:text-4xl font-bold text-[#0D0F33] mb-4"
-              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
+              className="text-3xl lg:text-4xl font-bold text-[#1F2937] mb-4"
+              style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
             >
-              Close Your Revenue Gap
+              How We Close Your Revenue Gap
             </h2>
-            <p className="text-[#6B7C93] text-lg font-medium">Three systems. One outcome.</p>
+            <p className="text-[#B8BCC8] text-lg">Three systems working together to capture every lead</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -368,8 +368,8 @@ export default function Experience() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#6B7C93] text-sm">
-          © 2026 ShiFt | Privacy | Terms
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#B8BCC8] text-sm">
+          © 2026 ShiFt. All rights reserved.
         </div>
       </footer>
     </div>

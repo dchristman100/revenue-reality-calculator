@@ -7,9 +7,9 @@ import { createPageUrl } from '../utils';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+      <header className="sticky top-0 z-50 bg-[#0A1628] border-b-2 border-[#FF6B47]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center">
             <img 
@@ -27,10 +27,10 @@ export default function Home() {
             </Link>
             <Button
               asChild
-              className="bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg"
+              className="bg-[#FF6B47] hover:bg-[#FF5533] text-white rounded-lg font-bold uppercase text-sm"
             >
               <a href="https://calendly.com/shiftnow/reality-session" target="_blank" rel="noopener noreferrer">
-                Book Demo
+                Live Demo
               </a>
             </Button>
           </div>
@@ -38,7 +38,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-32 bg-[#0A1628]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -46,43 +46,41 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 bg-[#FFEBEE] text-[#F54A48] px-4 py-2 rounded-full text-sm font-semibold mb-8">
+              <div className="inline-flex items-center gap-2 bg-transparent border border-[#FF6B47] text-[#FF6B47] px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider mb-8">
                 <Zap className="w-4 h-4" />
-                Speed Wins. Every Time.
+                Your AI sales team that never sleeps
               </div>
 
               <h1 
-                className="text-5xl lg:text-7xl font-extrabold text-[#0D0F33] leading-tight mb-6"
-                style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
+                className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6"
+                style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
               >
-                Stop Losing Leads.
+                Never Miss Another Lead.
                 <br />
-                <span className="text-[#F54A48]">Start Closing Deals.</span>
+                <span className="text-[#FF6B47]">AI That Converts 24/7.</span>
               </h1>
 
-              <p className="text-xl text-[#6B7C93] mb-10 max-w-2xl mx-auto leading-relaxed">
-                Roofing contractors lose $50K+ monthly to garbage leads and missed calls. 
-                ShiFt fixes both. With AI.
+              <p className="text-lg text-white mb-10 max-w-2xl mx-auto leading-relaxed">
+                AI responds in seconds. Converts while you sleep. Delivers 5-10x ROI.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
                   asChild
-                  className="h-14 px-8 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+                  className="h-14 px-8 text-sm font-bold uppercase bg-[#FF6B47] hover:bg-[#FF5533] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
                 >
                   <Link to={createPageUrl('Calculator')}>
-                    CALCULATE YOUR GAP →
+                    CALCULATE YOUR GAP
                   </Link>
                 </Button>
 
                 <Button
                   asChild
                   variant="outline"
-                  className="h-14 px-8 text-base font-semibold border-2 border-[#0D0F33] text-[#0D0F33] hover:bg-[#0D0F33] hover:text-white rounded-lg transition-all"
+                  className="h-14 px-8 text-sm font-bold uppercase border-2 border-[#FF6B47] text-[#FF6B47] hover:bg-[#FF6B47] hover:text-white rounded-lg transition-all"
                 >
                   <Link to={createPageUrl('Experience')}>
-                    <Play className="mr-2 w-5 h-5" />
-                    Watch Demo
+                    LIVE DEMO
                   </Link>
                 </Button>
               </div>
@@ -92,13 +90,13 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-[#0D0F33]">
+      <section className="py-16 bg-[#F5F3EE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-3 gap-8 text-center">
             {[
-              { value: "200+", label: "Contractors" },
-              { value: "$67K", label: "Avg Monthly Recovery" },
-              { value: "61%", label: "Close Rate Lift" }
+              { value: "24/7", label: "ALWAYS ON" },
+              { value: "<1s", label: "CONNECTION TIME" },
+              { value: "5-10x", label: "AVERAGE ROI" }
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -108,12 +106,12 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <p 
-                  className="text-4xl lg:text-5xl font-extrabold text-[#F54A48] mb-2"
-                  style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
+                  className="text-6xl lg:text-7xl font-bold text-[#FF6B47] mb-3"
+                  style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
                 >
                   {stat.value}
                 </p>
-                <p className="text-[#6B7C93]">{stat.label}</p>
+                <p className="text-xs font-semibold text-[#B8BCC8] uppercase tracking-widest">{stat.label}</p>
               </motion.div>
             ))}
           </div>
@@ -121,17 +119,17 @@ export default function Home() {
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 
-              className="text-3xl lg:text-4xl font-bold text-[#0D0F33] mb-4"
-              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
+              className="text-4xl lg:text-5xl font-bold text-[#1F2937] mb-6"
+              style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
             >
               Two Problems. One Solution.
             </h2>
-            <p className="text-[#6B7C93] text-lg max-w-2xl mx-auto">
-              Every contractor bleeds money in the same two places. ShiFt stops both.
+            <p className="text-[#B8BCC8] text-lg max-w-2xl mx-auto">
+              Every roofing contractor bleeds money in the same two places.
             </p>
           </div>
           
@@ -143,14 +141,14 @@ export default function Home() {
               className="bg-[#FFEBEE] rounded-2xl p-8 border-l-4 border-[#F54A48]"
             >
               <span className="text-3xl mb-4 block">🗑️</span>
-              <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>
+              <h3 className="text-xl font-bold text-[#1F2937] mb-3" style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}>
                 Garbage Leads
               </h3>
-              <p className="text-[#6B7C93] mb-4">
-                40% of leads are tire-kickers. Hours wasted. Zero revenue.
+              <p className="text-[#B8BCC8] mb-4">
+                40% of your leads waste your time and never buy.
               </p>
-              <p className="text-[#F54A48] font-semibold">
-                ShiFt scores every lead 0-100. Instantly. Before you call.
+              <p className="text-[#FF6B47] font-bold">
+                AI qualifies every lead instantly—score 0-100 before you pick up the phone.
               </p>
             </motion.div>
             
@@ -161,14 +159,14 @@ export default function Home() {
               className="bg-[#E8F4FD] rounded-2xl p-8 border-l-4 border-[#1976D2]"
             >
               <span className="text-3xl mb-4 block">📞</span>
-              <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>
+              <h3 className="text-xl font-bold text-[#1F2937] mb-3" style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}>
                 Missed Calls
               </h3>
-              <p className="text-[#6B7C93] mb-4">
-                78% of jobs go to whoever answers first. Voicemail = lost deal.
+              <p className="text-[#B8BCC8] mb-4">
+                78% of jobs go to whoever answers first. Every voicemail is money walking to your competitor.
               </p>
-              <p className="text-[#2E77AE] font-semibold">
-                ShiFt answers in 30 seconds. 24/7. Even at 2am.
+              <p className="text-[#FF6B47] font-bold">
+                AI answers every call in under 30 seconds—24/7, even at 2am.
               </p>
             </motion.div>
           </div>
@@ -176,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-[#0D0F33] to-[#1a1d4a]">
+      <section className="py-20 lg:py-32 bg-[#0A1628]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -184,30 +182,30 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 
-              className="text-3xl lg:text-5xl font-extrabold text-white mb-6"
-              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
+              className="text-4xl lg:text-6xl font-bold text-white mb-6"
+              style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
             >
-              See Your
+              Never Miss Another Lead.
               <br />
-              <span className="text-[#F54A48]">Revenue Gap.</span>
+              <span className="text-[#FF6B47]">Calculate Your Revenue Leak.</span>
             </h2>
-            <p className="text-[#6B7C93] text-lg mb-10 max-w-2xl mx-auto">
-              60 seconds. Exact number. No guesswork.
+            <p className="text-white text-lg mb-10 max-w-2xl mx-auto">
+              60 seconds. See exactly how much you're losing to missed calls and tire-kickers.
             </p>
 
             <Button
               asChild
-              className="h-14 px-10 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              className="h-14 px-10 text-sm font-bold uppercase bg-[#FF6B47] hover:bg-[#FF5533] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
             >
               <Link to={createPageUrl('Calculator')}>
-                CALCULATE YOUR GAP →
+                CALCULATE YOUR GAP
               </Link>
             </Button>
             
-            <div className="flex items-center justify-center gap-6 mt-8 text-[#6B7C93] text-sm font-medium">
+            <div className="flex items-center justify-center gap-6 mt-8 text-[#B8BCC8] text-xs font-semibold uppercase tracking-wider">
               <span className="flex items-center gap-2">
                 <Shield className="w-4 h-4" />
-                Free
+                Free—no credit card
               </span>
               <span className="flex items-center gap-2">
                 <TrendingUp className="w-4 h-4" />
@@ -219,15 +217,15 @@ export default function Home() {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#F5F3EE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
-            <span className="text-slate-500 font-medium">Trusted by 200+ contractors</span>
+            <span className="text-[#B8BCC8] font-semibold">Trusted by 200+ roofing contractors</span>
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map(i => (
-                <Star key={i} className="w-5 h-5 fill-[#FA982F] text-[#FA982F]" />
+                <Star key={i} className="w-5 h-5 fill-[#FF6B47] text-[#FF6B47]" />
               ))}
-              <span className="ml-2 text-slate-600 font-medium">4.9/5</span>
+              <span className="ml-2 text-[#1F2937] font-bold">5-10x ROI</span>
             </div>
           </div>
         </div>
@@ -235,8 +233,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#6B7C93] text-sm">
-          © 2026 ShiFt | Privacy | Terms
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#B8BCC8] text-sm">
+          © 2026 ShiFt. All rights reserved.
         </div>
       </footer>
     </div>
