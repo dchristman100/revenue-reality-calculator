@@ -218,11 +218,12 @@ export default function Calculator() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#F54A48] to-[#FA982F] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">S</span>
-            </div>
-            <span className="font-bold text-[#0D0F33] text-xl" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>ShiFt</span>
+          <div className="flex items-center">
+            <img 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697e7fc276d9d592d37c9370/23e2b1869_SHIFTLogoPureWhiteBackground.png" 
+              alt="ShiFt" 
+              className="h-8"
+            />
           </div>
           <span className="text-sm text-[#6B7C93] font-medium hidden sm:block">Speed Wins. Every Time.</span>
         </div>
