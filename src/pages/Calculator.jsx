@@ -222,9 +222,9 @@ export default function Calculator() {
             <div className="w-10 h-10 bg-gradient-to-br from-[#F54A48] to-[#FA982F] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">S</span>
             </div>
-            <span className="font-bold text-[#0D0F33] text-xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>ShiFt</span>
+            <span className="font-bold text-[#0D0F33] text-xl" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>ShiFt</span>
           </div>
-          <span className="text-sm text-slate-500 hidden sm:block">The OS for Revenue Reality</span>
+          <span className="text-sm text-[#6B7C93] font-medium hidden sm:block">Speed Wins. Every Time.</span>
         </div>
       </header>
 
@@ -241,12 +241,12 @@ export default function Calculator() {
                   transition={{ duration: 0.6 }}
                 >
                   <h1 
-                    className="text-4xl lg:text-5xl font-bold text-[#0D0F33] leading-tight mb-6"
-                    style={{ fontFamily: "'Montserrat', sans-serif" }}
+                    className="text-4xl lg:text-5xl font-extrabold text-[#0D0F33] leading-tight mb-6"
+                    style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
                   >
                     {copy.h1}
                   </h1>
-                  <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                  <p className="text-lg text-[#6B7C93] mb-8 leading-relaxed">
                     {copy.subhead}
                   </p>
                   <div className="space-y-3 mb-8">
@@ -343,10 +343,9 @@ export default function Calculator() {
                     
                     <Button
                       onClick={handleCalculate}
-                      className="w-full h-14 text-lg font-semibold bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+                      className="w-full h-14 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
                     >
-                      {copy.cta}
-                      <ArrowRight className="ml-2 w-5 h-5" />
+                      {copy.cta} →
                     </Button>
                   </div>
                 </motion.div>
@@ -383,14 +382,14 @@ export default function Calculator() {
               <p className="text-lg text-slate-500 mb-4">Your Monthly Revenue Gap</p>
               <div className="bg-gradient-to-r from-[#FFEBEE] via-white to-[#E8F5E9] rounded-2xl p-8 sm:p-12 inline-block">
                 <p 
-                  className="text-5xl sm:text-7xl font-bold text-[#F54A48]"
-                  style={{ fontFamily: "'Montserrat', sans-serif" }}
+                  className="text-5xl sm:text-7xl font-extrabold text-[#F54A48]"
+                  style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
                 >
                   <AnimatedCounter value={results.total.monthly} prefix="$" />
                 </p>
               </div>
-              <p className="text-xl text-[#0D0F33] mt-6 font-medium">
-                That's <span className="text-[#F54A48] font-bold">${results.total.annual.toLocaleString()}</span> per year walking out the door.
+              <p className="text-xl text-[#0D0F33] mt-6 font-semibold">
+                <span className="text-[#F54A48] font-extrabold">${results.total.annual.toLocaleString()}</span> annually. Gone.
               </p>
             </motion.div>
             
@@ -406,8 +405,8 @@ export default function Calculator() {
                   <span className="text-2xl">🗑️</span>
                   <h3 className="font-semibold text-[#0D0F33] uppercase tracking-wide text-sm">Garbage Lead Cost</h3>
                 </div>
-                <p className="text-3xl font-bold text-[#F54A48] mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                  ${results.garbage.total.toLocaleString()}/month
+                <p className="text-3xl font-extrabold text-[#F54A48] mb-4" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>
+                  ${results.garbage.total.toLocaleString()}/mo
                 </p>
                 <ul className="space-y-2 text-sm text-slate-600">
                   <li>• Time wasted on tire-kickers: <span className="font-medium">${results.garbage.timeCost.toLocaleString()}</span></li>
@@ -426,8 +425,8 @@ export default function Calculator() {
                   <span className="text-2xl">📞</span>
                   <h3 className="font-semibold text-[#0D0F33] uppercase tracking-wide text-sm">Missed Call Cost</h3>
                 </div>
-                <p className="text-3xl font-bold text-[#1976D2] mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                  ${results.missed.total.toLocaleString()}/month
+                <p className="text-3xl font-extrabold text-[#2E77AE] mb-4" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>
+                  ${results.missed.total.toLocaleString()}/mo
                 </p>
                 <ul className="space-y-2 text-sm text-slate-600">
                   <li>• Revenue potential lost: <span className="font-medium">${results.missed.potentialRevenue.toLocaleString()}</span></li>
@@ -446,23 +445,22 @@ export default function Calculator() {
               className="bg-white rounded-2xl shadow-xl p-8 sm:p-12 text-center"
             >
               <h2 
-                className="text-2xl sm:text-3xl font-bold text-[#0D0F33] mb-6"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                className="text-2xl sm:text-3xl font-extrabold text-[#0D0F33] mb-6"
+                style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
               >
-                Ready to close this gap?
+                Close This Gap.
               </h2>
-              
+
               <Button
                 asChild
-                className="h-14 px-8 text-lg font-semibold bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] mb-4"
+                className="h-14 px-8 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] mb-4"
               >
                 <a href="https://calendly.com/shiftnow/reality-session" target="_blank" rel="noopener noreferrer">
-                  BOOK YOUR FREE REALITY SESSION
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  BOOK FREE SESSION →
                 </a>
               </Button>
-              
-              <p className="text-slate-500 mb-8">15 minutes. No pitch. We show you how.</p>
+
+              <p className="text-[#6B7C93] mb-8 font-medium">15 minutes. No pitch.</p>
               
               <div className="flex items-center justify-center gap-4 text-slate-400 mb-8">
                 <div className="h-px bg-slate-200 w-16" />
@@ -481,7 +479,7 @@ export default function Calculator() {
                 </Link>
               </Button>
               
-              <p className="text-slate-500 mt-3 text-sm">Watch AI qualify leads in real-time</p>
+              <p className="text-[#6B7C93] mt-3 text-sm font-medium">See AI qualify leads. Live.</p>
             </motion.div>
             
             {/* Social Proof */}
@@ -566,8 +564,8 @@ export default function Calculator() {
       
       {/* Footer */}
       <footer className="py-8 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
-          © 2026 ShiFt NeuralOS™ | Privacy | Terms
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#6B7C93] text-sm">
+          © 2026 ShiFt | Privacy | Terms
         </div>
       </footer>
     </div>

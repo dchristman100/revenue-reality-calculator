@@ -15,7 +15,7 @@ export default function Home() {
             <div className="w-10 h-10 bg-gradient-to-br from-[#F54A48] to-[#FA982F] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">S</span>
             </div>
-            <span className="font-bold text-[#0D0F33] text-xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>ShiFt NeuralOS™</span>
+            <span className="font-bold text-[#0D0F33] text-xl" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>ShiFt</span>
           </div>
           <div className="flex items-center gap-4">
             <Link to={createPageUrl('Calculator')} className="text-slate-600 hover:text-[#0D0F33] font-medium hidden sm:block">
@@ -45,40 +45,39 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 bg-[#FFEBEE] text-[#F54A48] px-4 py-2 rounded-full text-sm font-medium mb-8">
+              <div className="inline-flex items-center gap-2 bg-[#FFEBEE] text-[#F54A48] px-4 py-2 rounded-full text-sm font-semibold mb-8">
                 <Zap className="w-4 h-4" />
-                The OS for Revenue Reality
+                Speed Wins. Every Time.
               </div>
-              
+
               <h1 
-                className="text-5xl lg:text-7xl font-bold text-[#0D0F33] leading-tight mb-6"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                className="text-5xl lg:text-7xl font-extrabold text-[#0D0F33] leading-tight mb-6"
+                style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
               >
                 Stop Losing Leads.
                 <br />
                 <span className="text-[#F54A48]">Start Closing Deals.</span>
               </h1>
-              
-              <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Roofing contractors lose $50K+ every month to garbage leads and missed calls. 
-                ShiFt NeuralOS™ fixes both problems with AI.
+
+              <p className="text-xl text-[#6B7C93] mb-10 max-w-2xl mx-auto leading-relaxed">
+                Roofing contractors lose $50K+ monthly to garbage leads and missed calls. 
+                ShiFt fixes both. With AI.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
                   asChild
-                  className="h-14 px-8 text-lg font-semibold bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+                  className="h-14 px-8 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
                 >
                   <Link to={createPageUrl('Calculator')}>
-                    <Calculator className="mr-2 w-5 h-5" />
-                    Calculate Your Revenue Gap
+                    CALCULATE YOUR GAP →
                   </Link>
                 </Button>
-                
+
                 <Button
                   asChild
                   variant="outline"
-                  className="h-14 px-8 text-lg border-2 border-[#0D0F33] text-[#0D0F33] hover:bg-[#0D0F33] hover:text-white rounded-lg transition-all"
+                  className="h-14 px-8 text-base font-semibold border-2 border-[#0D0F33] text-[#0D0F33] hover:bg-[#0D0F33] hover:text-white rounded-lg transition-all"
                 >
                   <Link to={createPageUrl('Experience')}>
                     <Play className="mr-2 w-5 h-5" />
@@ -96,9 +95,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-3 gap-8 text-center">
             {[
-              { value: "200+", label: "Contractors Served" },
+              { value: "200+", label: "Contractors" },
               { value: "$67K", label: "Avg Monthly Recovery" },
-              { value: "61%", label: "Avg Close Rate Increase" }
+              { value: "61%", label: "Close Rate Lift" }
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -108,12 +107,12 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <p 
-                  className="text-4xl lg:text-5xl font-bold text-[#F54A48] mb-2"
-                  style={{ fontFamily: "'Montserrat', sans-serif" }}
+                  className="text-4xl lg:text-5xl font-extrabold text-[#F54A48] mb-2"
+                  style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
                 >
                   {stat.value}
                 </p>
-                <p className="text-slate-400">{stat.label}</p>
+                <p className="text-[#6B7C93]">{stat.label}</p>
               </motion.div>
             ))}
           </div>
@@ -126,12 +125,12 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 
               className="text-3xl lg:text-4xl font-bold text-[#0D0F33] mb-4"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
             >
               Two Problems. One Solution.
             </h2>
-            <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-              Every roofing contractor bleeds money in the same two places. ShiFt stops both.
+            <p className="text-[#6B7C93] text-lg max-w-2xl mx-auto">
+              Every contractor bleeds money in the same two places. ShiFt stops both.
             </p>
           </div>
           
@@ -143,14 +142,14 @@ export default function Home() {
               className="bg-[#FFEBEE] rounded-2xl p-8 border-l-4 border-[#F54A48]"
             >
               <span className="text-3xl mb-4 block">🗑️</span>
-              <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>
                 Garbage Leads
               </h3>
-              <p className="text-slate-600 mb-4">
-                40% of your leads are tire-kickers who waste your time and never buy. That's hours of your life gone.
+              <p className="text-[#6B7C93] mb-4">
+                40% of leads are tire-kickers. Hours wasted. Zero revenue.
               </p>
               <p className="text-[#F54A48] font-semibold">
-                ShiFt AI qualifies leads instantly — score 0-100 before you pick up the phone.
+                ShiFt scores every lead 0-100. Instantly. Before you call.
               </p>
             </motion.div>
             
@@ -161,14 +160,14 @@ export default function Home() {
               className="bg-[#E8F4FD] rounded-2xl p-8 border-l-4 border-[#1976D2]"
             >
               <span className="text-3xl mb-4 block">📞</span>
-              <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>
                 Missed Calls
               </h3>
-              <p className="text-slate-600 mb-4">
-                78% of jobs go to whoever answers first. Every voicemail is money walking to your competitor.
+              <p className="text-[#6B7C93] mb-4">
+                78% of jobs go to whoever answers first. Voicemail = lost deal.
               </p>
-              <p className="text-[#1976D2] font-semibold">
-                ShiFt answers every call in under 30 seconds — 24/7, even at 2am.
+              <p className="text-[#2E77AE] font-semibold">
+                ShiFt answers in 30 seconds. 24/7. Even at 2am.
               </p>
             </motion.div>
           </div>
@@ -184,32 +183,30 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 
-              className="text-3xl lg:text-5xl font-bold text-white mb-6"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              className="text-3xl lg:text-5xl font-extrabold text-white mb-6"
+              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
             >
-              Ready to See Your
+              See Your
               <br />
-              <span className="text-[#F54A48]">Revenue Gap?</span>
+              <span className="text-[#F54A48]">Revenue Gap.</span>
             </h2>
-            <p className="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
-              In 60 seconds, our calculator shows you exactly how much you're losing every month — 
-              and how to fix it.
+            <p className="text-[#6B7C93] text-lg mb-10 max-w-2xl mx-auto">
+              60 seconds. Exact number. No guesswork.
             </p>
-            
+
             <Button
               asChild
-              className="h-14 px-10 text-lg font-semibold bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              className="h-14 px-10 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
             >
               <Link to={createPageUrl('Calculator')}>
-                Calculate My Revenue Gap
-                <ArrowRight className="ml-2 w-5 h-5" />
+                CALCULATE YOUR GAP →
               </Link>
             </Button>
             
-            <div className="flex items-center justify-center gap-6 mt-8 text-slate-400 text-sm">
+            <div className="flex items-center justify-center gap-6 mt-8 text-[#6B7C93] text-sm font-medium">
               <span className="flex items-center gap-2">
                 <Shield className="w-4 h-4" />
-                Free — no credit card
+                Free
               </span>
               <span className="flex items-center gap-2">
                 <TrendingUp className="w-4 h-4" />
@@ -237,8 +234,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
-          © 2026 ShiFt NeuralOS™ | Privacy | Terms
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#6B7C93] text-sm">
+          © 2026 ShiFt | Privacy | Terms
         </div>
       </footer>
     </div>

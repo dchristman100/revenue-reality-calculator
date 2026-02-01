@@ -83,7 +83,7 @@ export default function Experience() {
             <div className="w-10 h-10 bg-gradient-to-br from-[#F54A48] to-[#FA982F] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">S</span>
             </div>
-            <span className="font-bold text-[#0D0F33] text-xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>ShiFt</span>
+            <span className="font-bold text-[#0D0F33] text-xl" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>ShiFt</span>
           </div>
           <Button
             asChild
@@ -129,20 +129,20 @@ export default function Experience() {
             transition={{ duration: 0.6 }}
           >
             <h1 
-              className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#0D0F33] leading-tight mb-6"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-[#0D0F33] leading-tight mb-6"
+              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
             >
-              See ShiFt NeuralOS™ in Action
+              See ShiFt in Action
             </h1>
-            <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl text-[#6B7C93] mb-10 max-w-2xl mx-auto">
               {heroSubhead}
             </p>
             <Button
               onClick={() => setIsVideoPlaying(true)}
-              className="h-14 px-8 text-lg font-semibold bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              className="h-14 px-8 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
             >
               <Play className="mr-2 w-5 h-5" />
-              WATCH THE DEMO
+              WATCH DEMO
             </Button>
           </motion.div>
         </div>
@@ -190,11 +190,11 @@ export default function Experience() {
           <div className="text-center mb-16">
             <h2 
               className="text-3xl lg:text-4xl font-bold text-[#0D0F33] mb-4"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
             >
-              How We Close Your Revenue Gap
+              Close Your Revenue Gap
             </h2>
-            <p className="text-slate-600 text-lg">Three powerful systems working together</p>
+            <p className="text-[#6B7C93] text-lg font-medium">Three systems. One outcome.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -213,10 +213,10 @@ export default function Experience() {
                   >
                     <feature.icon className="w-7 h-7" style={{ color: feature.color }} />
                   </div>
-                  <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  <h3 className="text-xl font-bold text-[#0D0F33] mb-3" style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}>
                     {feature.title}
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-[#6B7C93] leading-relaxed">
                     {feature.description}
                   </p>
                   {feature.highlight && (
@@ -244,10 +244,10 @@ export default function Experience() {
             <div className="text-center mb-12">
               <p className="text-[#FA982F] font-medium mb-3">CASE STUDY</p>
               <h2 
-                className="text-3xl lg:text-4xl font-bold mb-4"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                className="text-3xl lg:text-4xl font-extrabold mb-4"
+                style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
               >
-                "Phoenix contractor recovered $67K in 30 days."
+                "$67K recovered. 30 days."
               </h2>
             </div>
             
@@ -260,8 +260,8 @@ export default function Experience() {
                 <div key={i} className="text-center">
                   <p className="text-slate-400 mb-2">{stat.label}</p>
                   <p 
-                    className="text-4xl lg:text-5xl font-bold text-[#F54A48]"
-                    style={{ fontFamily: "'Montserrat', sans-serif" }}
+                    className="text-4xl lg:text-5xl font-extrabold text-[#F54A48]"
+                    style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
                   >
                     {stat.value}
                   </p>
@@ -288,11 +288,11 @@ export default function Experience() {
           <div className="text-center mb-16">
             <h2 
               className="text-3xl lg:text-4xl font-bold text-[#0D0F33] mb-4"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
             >
-              Starting at $297/month
+              From $297/month
             </h2>
-            <p className="text-slate-600 text-lg">Choose the plan that fixes your biggest problem</p>
+            <p className="text-[#6B7C93] text-lg font-medium">Fix one problem. Or both.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -312,10 +312,10 @@ export default function Experience() {
                   )}
                   <h3 className="text-lg font-bold text-[#0D0F33] mb-1">{tier.name}</h3>
                   <p 
-                    className="text-4xl font-bold text-[#0D0F33] mb-2"
-                    style={{ fontFamily: "'Montserrat', sans-serif" }}
+                    className="text-4xl font-extrabold text-[#0D0F33] mb-2"
+                    style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
                   >
-                    {tier.price}<span className="text-lg text-slate-500 font-normal">/mo</span>
+                    {tier.price}<span className="text-lg text-[#6B7C93] font-normal">/mo</span>
                   </p>
                   <p className="text-slate-500 mb-6">{tier.description}</p>
                   <ul className="space-y-3">
@@ -343,24 +343,23 @@ export default function Experience() {
             className="bg-white rounded-3xl shadow-xl p-8 sm:p-12 lg:p-16 text-center"
           >
             <h2 
-              className="text-3xl lg:text-4xl font-bold text-[#0D0F33] mb-6"
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              className="text-3xl lg:text-4xl font-extrabold text-[#0D0F33] mb-6"
+              style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
             >
               {finalCtaHeadline}
             </h2>
-            
+
             <Button
               asChild
-              className="h-14 px-8 text-lg font-semibold bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              className="h-14 px-8 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
             >
               <a href="https://calendly.com/shiftnow/reality-session" target="_blank" rel="noopener noreferrer">
-                BOOK YOUR DEMO
-                <ArrowRight className="ml-2 w-5 h-5" />
+                BOOK DEMO →
               </a>
             </Button>
-            
-            <p className="text-slate-500 mt-4">
-              15 minutes. See it work for YOUR business.
+
+            <p className="text-[#6B7C93] mt-4 font-medium">
+              15 minutes. Your business.
             </p>
           </motion.div>
         </div>
@@ -368,8 +367,8 @@ export default function Experience() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
-          © 2026 ShiFt NeuralOS™ | Privacy | Terms
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#6B7C93] text-sm">
+          © 2026 ShiFt | Privacy | Terms
         </div>
       </footer>
     </div>
