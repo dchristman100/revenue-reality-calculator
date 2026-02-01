@@ -83,7 +83,7 @@ export default function Experience() {
             <img 
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697e7fc276d9d592d37c9370/23e2b1869_SHIFTLogoPureWhiteBackground.png" 
               alt="ShiFt" 
-              className="h-8"
+              className="h-16"
             />
           </div>
           <Button
