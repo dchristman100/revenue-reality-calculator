@@ -220,7 +220,7 @@ export default function Calculator() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697e7fc276d9d592d37c9370/23e2b1869_SHIFTLogoPureWhiteBackground.png" 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697e7fc276d9d592d37c9370/3b299dd05_FinalV2.png" 
               alt="ShiFt" 
               className="h-16"
             />
