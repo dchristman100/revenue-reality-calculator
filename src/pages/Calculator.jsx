@@ -456,7 +456,7 @@ export default function Calculator() {
                 asChild
                 className="h-14 px-8 text-base font-bold uppercase bg-[#F54A48] hover:bg-[#e04442] text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] mb-4"
               >
-                <a href="https://calendly.com/shiftnow/reality-session" target="_blank" rel="noopener noreferrer">
+                <a href="https://makea.shiftnow.io/widget/bookings/reality" target="_blank" rel="noopener noreferrer">
                   BOOK FREE SESSION →
                 </a>
               </Button>
