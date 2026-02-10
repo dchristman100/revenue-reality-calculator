@@ -47,18 +47,16 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import Calculator from './pages/Calculator';
 import Experience from './pages/Experience';
 import Home from './pages/Home';
 
 
 export const PAGES = {
-    "Calculator": Calculator,
     "Experience": Experience,
     "Home": Home,
 }
 
 export const pagesConfig = {
-    mainPage: "Calculator",
+    mainPage: "Experience",
     Pages: PAGES,
 };
