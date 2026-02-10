@@ -55,7 +55,7 @@ export default function Experience() {
   const pricingTiers = [
     {
       name: "Essential",
-      price: "$297",
+      price: "$397",
       description: "Fix ONE problem",
       features: ["AI Qualification OR 24/7 Answering", "Basic analytics", "Email support"]
     },
