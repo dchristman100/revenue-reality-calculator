@@ -29,7 +29,7 @@ export default function Home() {
               asChild
               className="bg-[#FF6B47] hover:bg-[#FF5533] text-white rounded-lg font-bold uppercase text-sm"
             >
-              <a href="https://calendly.com/shiftnow/reality-session" target="_blank" rel="noopener noreferrer">
+              <a href="https://experience.shiftnow.io" target="_blank" rel="noopener noreferrer">
                 Live Demo
               </a>
             </Button>
@@ -79,9 +79,9 @@ export default function Home() {
                   variant="outline"
                   className="h-14 px-8 text-sm font-bold uppercase border-2 border-[#FF6B47] text-[#FF6B47] hover:bg-[#FF6B47] hover:text-white rounded-lg transition-all"
                 >
-                  <Link to={createPageUrl('Experience')}>
+                  <a href="https://experience.shiftnow.io" target="_blank" rel="noopener noreferrer">
                     LIVE DEMO
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </motion.div>
