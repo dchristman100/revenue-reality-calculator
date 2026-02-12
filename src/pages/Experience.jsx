@@ -109,7 +109,7 @@ export default function Experience() {
               <span className="text-xl">💡</span>
               <div>
                 <span className="text-[#0D0F33] font-medium">Haven't calculated your revenue gap yet?</span>
-                <Link to={createPageUrl('Calculator')} className="ml-2 text-[#1976D2] hover:underline font-medium">
+                <Link to={createPageUrl('Home')} className="ml-2 text-[#1976D2] hover:underline font-medium">
                   → See how much you're losing in 60 seconds
                 </Link>
               </div>
