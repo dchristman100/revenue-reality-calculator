@@ -291,7 +291,7 @@ export default function Experience() {
               className="text-3xl lg:text-4xl font-bold text-[#0D0F33] mb-4"
               style={{ fontFamily: "'Montserrat Alternates', sans-serif" }}
             >
-              From $297/month
+              From $398/mo
             </h2>
             <p className="text-[#6B7C93] text-lg font-medium">Fix one problem. Or both.</p>
           </div>
