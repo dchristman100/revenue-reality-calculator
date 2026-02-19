@@ -138,13 +138,15 @@ export default function ResultsSection({ results, experienceUrl, mode }) {
           </Button>
           <p className="text-[#64748B] text-xs mb-6">15 minutes. Your numbers. Zero obligation.</p>
 
-          <Link
-            to={experienceUrl}
+          <a
+            href="https://experience.shiftnow.io"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white underline text-sm hover:text-[#FA982F] transition-colors"
             onClick={() => base44.analytics.track({ eventName: 'fix_leaks_cta_click', properties: { total_gap: results.total.monthly, destination: 'experience' } })}
           >
-            See How ShiFt Plugs These Leaks →
-          </Link>
+            See ShiFt in Action First →
+          </a>
         </motion.div>
 
       </div>
