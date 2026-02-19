@@ -184,7 +184,34 @@ export default function Home() {
     }
     
     if (hasError) return;
-    
+
+    // Webhook payload
+    const webhookPayload = {
+      email,
+      phone,
+      customFields: {
+        calc_monthly_leads: String(inputs.monthlyLeads),
+        calc_avg_job_value: String(inputs.avgJobValue),
+        calc_close_rate: String(inputs.closeRate),
+        calc_missed_calls: String(inputs.missedCalls),
+        calc_tire_kicker_pct: String(inputs.tireKickerPercent),
+        calc_hourly_value: String(inputs.hourlyValue),
+        calc_total_gap: String(results.total.monthly),
+        calc_garbage_cost: String(results.garbage.total),
+        calc_missed_cost: String(results.missed.total),
+        calc_mode: mode,
+        calc_completed_at: new Date().toISOString(),
+        leak_count_identified: 2,
+        leaks_remaining: 5
+      },
+      tags: ["calculator-completed", "7-leaks-partial"]
+    };
+    fetch('https://hook.us1.make.com/YOUR_WEBHOOK_URL', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(webhookPayload)
+    }).catch(() => {});
+
     setShowEmailGate(false);
     setShowResults(true);
   };
