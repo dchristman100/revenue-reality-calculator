@@ -61,7 +61,7 @@ export default function Experience() {
     },
     {
       name: "Professional",
-      price: "$597",
+      price: "$697",
       description: "Fix BOTH problems",
       features: ["AI Qualification", "24/7 Answering", "Advanced analytics", "Priority support"],
       popular: true
