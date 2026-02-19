@@ -228,7 +228,7 @@ export default function Home() {
               className="h-16"
             />
           </div>
-          <span className="text-xs text-[#B8BCC8] font-semibold uppercase tracking-wider hidden sm:block">Your AI sales team that never sleeps</span>
+          <span className="text-xs text-[#B8BCC8] font-semibold uppercase tracking-wider hidden sm:block">Most contractors lose $30K–$100K/month and never see it.</span>
         </div>
       </header>
 
