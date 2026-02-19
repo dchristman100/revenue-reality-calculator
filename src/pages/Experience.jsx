@@ -68,7 +68,7 @@ export default function Experience() {
     },
     {
       name: "Enterprise",
-      price: "$997",
+      price: "$1,298",
       description: "Full NeuralOS",
       features: ["Everything in Professional", "Custom integrations", "Dedicated success manager", "API access"]
     }
