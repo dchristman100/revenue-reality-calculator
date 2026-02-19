@@ -212,7 +212,7 @@ export default function Home() {
   
   const copy = getCopy();
   
-  const experienceUrl = `${createPageUrl('Experience')}?from=calculator&total_gap=${results.total.monthly}&garbage_cost=${results.garbage.total}&missed_cost=${results.missed.total}&mode=${mode}`;
+  const experienceUrl = `${createPageUrl('Experience')}?from=calculator&total_gap=${results.total.monthly}&garbage_cost=${results.garbage.total}&missed_cost=${results.missed.total}&mode=${mode}&leads=${inputs.monthlyLeads}&job_value=${inputs.avgJobValue}&close_rate=${inputs.closeRate}&missed_calls=${inputs.missedCalls}`;
 
   return (
     <div className="min-h-screen bg-white">
